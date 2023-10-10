@@ -12,7 +12,6 @@ public class Game {
     private final ArrayList<Player> players;
 
 
-
     public Game(int numPlayers) {
         this.deck = new Deck();
         this.players = new ArrayList<>();
@@ -76,11 +75,13 @@ public class Game {
                 }
             }
         } while (isCardsLeftToPlay);
+        // TODO: 2023-10-10 Create win condition using points
 
     }
 
     public void goldfishTurn(Player currentPlayer) {
         System.out.println("Current Turn Belongs to: " + currentPlayer.getName());
+        // TODO: 2023-10-10 Change goldfishTurn to auto match pairs dealt to player and give them points accordingly
         Card chosenCard = currentPlayer.chooseCard();
         System.out.println("Which player would you like to ask if they have any " + chosenCard.getValue() + "s");
 
@@ -113,7 +114,6 @@ public class Game {
         }
 
     }
-
 
 
     /**
@@ -236,7 +236,6 @@ public class Game {
             }
         } while (true);
     }
-
 
 
 }

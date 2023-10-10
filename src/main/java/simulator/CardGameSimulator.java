@@ -3,6 +3,8 @@ package src.main.java.simulator;
 import src.main.java.models.Deck;
 import src.main.java.models.Player;
 
+// note: Only Goldfish is implemented
+// TODO: 2023-10-10 Ensure proper testing is done on all classes.
 public class CardGameSimulator {
     public static void main(String[] args) {
         Deck myDeck = new Deck();
